@@ -12,7 +12,6 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        val repo = LobiRepository()
-        repo.login("yushiogiwara@icloud.com","Maiko7039")
+        
     }
 }
