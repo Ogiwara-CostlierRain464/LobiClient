@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LobiTest.iml" filepath="$PROJECT_DIR$/LobiTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cycle/cycle.iml" filepath="$PROJECT_DIR$/cycle/cycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lobi-api/lobi-api.iml" filepath="$PROJECT_DIR$/lobi-api/lobi-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lobi-repository/lobi-repository.iml" filepath="$PROJECT_DIR$/lobi-repository/lobi-repository.iml" />
+    </modules>
+  </component>
+</project>
