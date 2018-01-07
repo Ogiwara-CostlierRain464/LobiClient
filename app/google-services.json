@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "756270923085",
+    "firebase_url": "https://lobiviewer.firebaseio.com",
+    "project_id": "lobiviewer",
+    "storage_bucket": "lobiviewer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756270923085:android:651ee4514bf7f124",
+        "android_client_info": {
+          "package_name": "jp.ogiwara.test.lobitest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756270923085-j36g3qhhqdsiiaet4lhhacm3gptmmjl0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByNluTDBc1Y1j4RSpGIwhg3ik2MWAAlP8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

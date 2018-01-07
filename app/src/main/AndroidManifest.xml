@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.ogiwara.test.lobitest">
+
+    <!-- TODO Splash -->
+
+    <application
+        android:name=".ThisApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/BaseTheme">
+        <activity
+            android:name=".splash.SplashActivity"
+            android:theme="@style/LobiTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@style/LobiTheme" />
+        <activity
+            android:name=".twitter_login.TwitterLoginActivity"
+            android:theme="@style/LobiTheme" />
+        <activity
+            android:name=".mail_login.MailLoginActivity"
+            android:theme="@style/LobiTheme" />
+        <activity
+            android:name=".base.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/LobiTheme" />
+
+        <activity android:name=".group_activity.GroupActivity"
+            android:theme="@style/LobiTheme"/>
+
+        <activity android:name=".user_activity.UserActivity" />
+        <activity
+            android:name=".chat_edit.ChatEditActivity"
+            android:theme="@style/LobiTheme" />
+        <activity
+            android:name=".search.SearchActivity"
+            android:theme="@style/LobiTheme" />
+        <activity android:name=".user_list.UserListActivity" />
+        <activity
+            android:name=".test.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/BaseTheme" />
+        <activity android:name=".chat_activity.ChatActivity" />
+    </application>
+
+</manifest>

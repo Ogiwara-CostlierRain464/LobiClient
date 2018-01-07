@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LobiAPI</string>
+    <string name="invalid_mail_or_pass">メールアドレスかパスワードが間違っています</string>
+</resources>

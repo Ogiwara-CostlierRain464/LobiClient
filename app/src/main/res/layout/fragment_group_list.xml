@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="jp.ogiwara.test.lobitest.group_list.State" />
+        <variable name="store" type="jp.ogiwara.cycle.BasicStore&lt;State>" />
+        <variable name="handler" type="android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:onRefreshListener="@{handler::onRefresh}"
+            app:refreshing="@{store.state.loading}">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    layout="@layout/empty_list_view"
+                    android:id="@+id/included_empty_view"/>
+
+                <jp.ogiwara.test.lobitest.other.view.group_list.GroupListView
+                    android:background="@android:color/white"
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:list="@{store.state.list}" />
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+</layout>

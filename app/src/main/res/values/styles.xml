@@ -1,0 +1,65 @@
+<resources>
+
+
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--item name="android:windowAnimationStyle">@style/AnimationTheme</item-->
+
+        <!-- ステータスバー -->
+        <item name="colorPrimaryDark">@android:color/darker_gray</item>
+    </style>
+
+    <style name="LobiTheme" parent="BaseTheme">
+        <!-- ActionBar -->
+        <item name="colorPrimary">@color/lobi</item>
+        <!-- RadioButtonとか -->
+        <item name="colorAccent">@color/lobi</item>
+        <!-- ActionBarの文字 -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="WhiteTheme" parent="BaseTheme">
+        <!-- ActionBar -->
+        <item name="colorPrimary">@android:color/white</item>
+        <!-- RadioButtonとか -->
+
+        <!-- ActionBarの文字 -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+
+    <style name="BlackTheme" parent="BaseTheme">
+        <!-- ActionBar -->
+        <item name="colorPrimary">@android:color/black</item>
+        <!-- RadioButtonとか -->
+
+        <!-- ActionBarの文字 -->
+        <item name="android:textColorPrimary">@android:color/black</item>
+
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="AnimationTheme" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/slide_out_right</item><!-- 逆にしよう! -->
+    </style>
+
+    <style name="ToolTabStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/lobi</item>
+        <item name="tabSelectedTextColor">@color/lobi</item>
+    </style>
+
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/lobi</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/lobi</item>
+    </style>
+
+    <style name="BaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="BaseTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="jp.ogiwara.test.lobitest.chat_list.State" />
+        <variable name="store" type="jp.ogiwara.cycle.BasicStore&lt;State>" />
+        <variable name="handler" type="android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener" />
+    </data>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        app:refreshing="@{store.state.loading}"
+        app:onRefreshListener="@{handler::onRefresh}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <jp.ogiwara.test.lobitest.other.view.chat_list.ChatListView
+                android:id="@+id/list"
+                app:list="@{store.state.list}"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</layout>

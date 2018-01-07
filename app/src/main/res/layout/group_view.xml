@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View" />
+        <import type="jp.ogiwara.test.lobitest.group_view.State" />
+        <variable name="store" type="jp.ogiwara.cycle.BasicStore&lt;State>" />
+        <variable name="handler" type="jp.ogiwara.test.lobitest.group_view.GroupView" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <jp.ogiwara.test.lobitest.other.view.AspectRatioImageView
+                android:id="@+id/image_group_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:heightRatio="1"
+                app:srcCompat="@android:color/darker_gray"
+                app:widthRatio="1" />
+
+            <TextView
+                android:id="@+id/text_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/white"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="-"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/image_new_chat"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="15dp"
+                android:tint="@android:color/holo_orange_light"
+                app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</layout>
