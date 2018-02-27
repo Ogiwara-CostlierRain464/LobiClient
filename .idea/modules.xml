@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LobiTest.iml" filepath="$PROJECT_DIR$/LobiTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LobiClient.iml" filepath="$PROJECT_DIR$/LobiClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cycle/cycle.iml" filepath="$PROJECT_DIR$/cycle/cycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/lobi-api/lobi-api.iml" filepath="$PROJECT_DIR$/lobi-api/lobi-api.iml" />

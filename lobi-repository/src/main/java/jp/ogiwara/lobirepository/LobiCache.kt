@@ -23,7 +23,7 @@ import jp.ogiwara.lobirepository.util.USER_POOL_MAX_SIZE
  * - バックグラウンドでのデータ自動更新: TODO
  *
  */
-class LobiCache(val realm: Realm){
+class LobiCache(){
 
     var me: Subject<Me>? = null
 

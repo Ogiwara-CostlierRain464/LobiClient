@@ -8,4 +8,11 @@ import org.junit.Test
  * @see [Testing documentation](http://d.android.com/tools/testing)
  */
 class ExampleUnitTest {
+    @Test
+    fun userAgentTest(){
+        val api = LobiAPI()
+        api.login("mail","pass")
+
+        println(api.getMe().name)
+    }
 }
